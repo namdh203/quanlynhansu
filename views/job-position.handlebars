@@ -1,0 +1,27 @@
+<h2>Chức vụ</h2>
+<a href="/add-job-position" class="btn btn-primary">Thêm chức vụ</a>
+<div class="table-responsive mt-2">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Mã chức vụ</th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each rows}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.code}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.description}}</td>
+                <td>
+                    <a href="delete-job-position/{{this.id}}"class="btn btn-danger" >Xóa</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,39 @@
+<h2>Nhân viên</h2>
+<a href="/add-employee" class="btn btn-primary">Thêm nhân viên</a>
+<div class="table-responsive mt-2">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>Mã nhân viên</th>
+                <th>Tên</th>
+                <th>Số điện thoại</th>
+                <th>Email</th>
+                <th>Địa chỉ</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Tài khoản ngân hàng</th>
+                <th>Mã phòng ban</th>
+                <th>Mã chức vụ</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each rows}}
+            <tr>
+                <td>{{this.code}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.phone_number}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.address}}</td>
+                <td>{{this.gender}}</td>
+                <td>{{this.date_of_birth}}</td>
+                <td>{{this.bank_account}}</td>
+                <td>{{this.department_id}}</td>
+                <td>{{this.job_position_id}}</td>
+                <td>
+                    <a href="delete-employee/{{this.id}}"class="btn btn-danger" >Xóa</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

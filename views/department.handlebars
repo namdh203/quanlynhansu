@@ -1,0 +1,27 @@
+<h2>Phòng ban</h2>
+<a href="/add-department" class="btn btn-primary">Thêm phòng ban</a>
+<div class="table-responsive mt-2">
+    <table class="table table-striped table-sm">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Mã phòng ban</th>
+                <th>Tên</th>
+                <th>Mô tả</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each rows}}
+            <tr>
+                <td>{{this.id}}</td>
+                <td>{{this.code}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.description}}</td>
+                <td>
+                    <a href="delete-department/{{this.id}}"class="btn btn-danger" >Xóa</a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
