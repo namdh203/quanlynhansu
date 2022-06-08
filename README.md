@@ -1,6 +1,6 @@
 # Quản Lý Nhân Sự
-Phần mềm quản lý nhân sự
-Chức năng:
+Phần mềm quản lý nhân sự  
+## Chức năng:
 - Đăng nhập
 - Quản lý nhân viên
 - Quản lý phòng ban
