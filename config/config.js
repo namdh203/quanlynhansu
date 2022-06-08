@@ -17,7 +17,10 @@ connection = {
     "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "URL",
+    "username": "root",
+    "password": "123456",
+    "database": "quanlynhansu",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
